@@ -13,7 +13,7 @@ app = Flask(__name__)
 def greeting():
     return 'Hello world!'
 
-@app.route("/calculator/add", methods=['POST'])
+@app.route("/calculator/add",methods=['POST'])
 def add():
     numbers = request.json
     response = Result(numbers['first'] + numbers['second'])
